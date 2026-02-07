@@ -1,0 +1,13 @@
+langchain
+streamlit 
+langchain_groq
+langchain_community
+langchain-Chroma
+validators
+youtube_transcript_api
+pytube==15.0.0
+openai
+langchain_nvidia_ai_endpoints
+faiss-cpu
+crewai
+crewai_tools
