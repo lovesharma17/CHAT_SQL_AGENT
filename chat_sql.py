@@ -1,6 +1,7 @@
 import streamlit as st
 from pathlib import Path
 import os
+from langchain_classic.agents import create_sql_agent
 from langchain_classic.sql_database import SQLDatabase 
 from langchain_classic.agents.agent_types import AgentType
 from langchain_classic.prompts import ChatPromptTemplate, MessagesPlaceholder
@@ -117,3 +118,4 @@ if user_query:
         )
 
         st.write(final_answer)
+
