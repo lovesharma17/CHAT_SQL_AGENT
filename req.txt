@@ -4,7 +4,8 @@ langchain
 langchain-core
 langchain-community
 langchain-groq
-langchain-classic          # ← this is the critical one (hyphen!)
+langchain-classic==1.0.1        # ← this is the critical one (hyphen!)
 sqlalchemy>=2.0
 mysql-connector-python
 groq>=0.5.0                # optional but helps
+
