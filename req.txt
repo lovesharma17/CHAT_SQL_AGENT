@@ -1,23 +1,10 @@
-langchain-classic# Core Streamlit (usually pre-installed on Streamlit Cloud, but safe to include)
 streamlit>=1.30.0
-
-# LangChain packages (your code uses legacy/classic SQL agent style)
+python-dotenv
 langchain
 langchain-core
 langchain-community
 langchain-groq
-langchain-classic          # Required for create_sql_agent, SQLDatabaseToolkit, AgentType.ZERO_SHOT_REACT_DESCRIPTION, etc.
-
-# LLM / Groq integration (already pulled by langchain-groq, but explicit is fine)
-groq>=0.5.0                 # optional but recommended for stability
-
-# Database connectors
-sqlalchemy>=2.0             # Needed for SQLDatabase(create_engine(...))
-sqlite3                     # built-in, no need to list — just here for clarity
-mysql-connector-python      # Used in your mysql+mysqlconnector:// URI
-
-# Environment variables
-python-dotenv
-
-# Optional but very useful for debugging / nicer output
-pydantic>=2.0
+langchain-classic          # ← this is the critical one (hyphen!)
+sqlalchemy>=2.0
+mysql-connector-python
+groq>=0.5.0                # optional but helps
