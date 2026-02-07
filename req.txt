@@ -1,15 +1,16 @@
+langchain-classic
 langchain
 streamlit 
-langchain_groq
-langchain_community
+langchain-groq
+langchain-community
 langchain-Chroma
 validators
 youtube_transcript_api
 pytube==15.0.0
-langchain_classic
 openai
 langchain_nvidia_ai_endpoints
 faiss-cpu
 crewai
 
 crewai_tools
+
