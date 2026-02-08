@@ -14,7 +14,7 @@ from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 
 load_dotenv()
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
+
 
 st.set_page_config(page_title="Langchain: Chat with SQL DB" , page_icon="🕊")
 st.title("🕊 Langchain : Chat with SQL DB")
@@ -118,4 +118,5 @@ if user_query:
         )
 
         st.write(final_answer)
+
 
