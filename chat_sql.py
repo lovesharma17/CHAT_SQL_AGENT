@@ -43,7 +43,7 @@ if not api_key:
     st.info("Please add the groq api key")
 
 ## LLM model
-llm =ChatGroq( model_name = "llama-3.1-8b-instant" , streaming=False)
+llm =ChatGroq(groq_api_key = "api_key" ,model_name = "llama-3.1-8b-instant" , streaming=False)
 
 
 @st.cache_resource(ttl="2h")
@@ -118,5 +118,6 @@ if user_query:
         )
 
         st.write(final_answer)
+
 
 
