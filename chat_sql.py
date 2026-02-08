@@ -88,7 +88,6 @@ agent_executor = create_sql_agent(
     toolkit=toolkit,
     agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
     verbose=True,
-    prompt = prompt,
     max_iterations=10,
     handle_parsing_errors=True,
     callbacks=[callback],
@@ -118,6 +117,7 @@ if user_query:
         )
 
         st.write(final_answer)
+
 
 
 
